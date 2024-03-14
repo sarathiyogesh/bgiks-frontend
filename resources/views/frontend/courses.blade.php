@@ -40,37 +40,37 @@
                         </div>
 
 
-                        <div class="hs-line-3 mb-10">Pioneering KAAS - Knowledge As A Service</div>
+                        <div class="hs-line-3 mb-10">{!! Helpers::getcontent("section_2_15") !!}</div>
                         <div class="section-text black">
-                            Courses that create a mindset of appreciation and acceptance of IKS in students, for modern applications of IKS to emerge.
+                            {!! Helpers::getcontent("section_2_16") !!}
                         </div>
 
                         <div class="row mt-20">
                             <div class="col-md-3 wow fadeInDown mb-xs-20" data-wow-delay="0.3s" data-wow-duration="1s">
                                 <div class="box-two d-flex align-items-center justify-content-center m-flex-start">
-                                    <div class="me-3"><img src="/frontend/images/icons/faculty.png"></div>
-                                    <div class="text-center section-text">Faculty Assist Program</div>
+                                    <div class="me-3"><img src="{!! Helpers::getsingleimage('section_2_18') !!}"></div>
+                                    <div class="text-center section-text">{!! Helpers::getcontent("section_2_17") !!}</div>
                                 </div>
                             </div>
 
                             <div class="col-md-3 wow fadeInDown mb-xs-20" data-wow-delay="0.3s" data-wow-duration="2s">
                                 <div class="box-two d-flex align-items-center justify-content-center m-flex-start">
-                                    <div class="me-3"><img src="/frontend/images/icons/student.png"></div>
-                                    <div class="text-center section-text">Student Assist Program</div>
+                                    <div class="me-3"><img src="{!! Helpers::getsingleimage('section_2_20') !!}"></div>
+                                    <div class="text-center section-text">{!! Helpers::getcontent("section_2_19") !!}</div>
                                 </div>
                             </div>
 
                             <div class="col-md-3 wow fadeInDown mb-xs-20" data-wow-delay="0.3s" data-wow-duration="3s">
                                 <div class="box-two d-flex align-items-center justify-content-center m-flex-start">
-                                    <div class="me-3"><img src="/frontend/images/icons/private-learning.png"></div>
-                                    <div class="text-center section-text">Private E-Learning</div>
+                                    <div class="me-3"><img src="{!! Helpers::getsingleimage('section_2_22') !!}"></div>
+                                    <div class="text-center section-text">{!! Helpers::getcontent("section_2_21") !!}</div>
                                 </div>
                             </div>
 
                             <div class="col-md-3 wow fadeInDown mb-xs-20" data-wow-delay="0.3s" data-wow-duration="3s">
                                 <div class="box-two d-flex align-items-center justify-content-center m-flex-start">
-                                    <div class="me-3"><img src="/frontend/images/icons/library.png"></div>
-                                    <div class="text-center section-text">Library</div>
+                                    <div class="me-3"><img src="{!! Helpers::getsingleimage('section_2_24') !!}"></div>
+                                    <div class="text-center section-text">{!! Helpers::getcontent("section_2_23") !!}</div>
                                 </div>
                             </div>
                         </div>
@@ -133,10 +133,10 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="page-title color-blue mb-10">
-                            Courses aligned with IKS objectives
+                            {!! Helpers::getcontent("section_3_25") !!}
                         </div>
                         <div class="section-text black">
-                            Bharath GyanTM IKS courses are aligned with the objectives of IKS Division to showcase aspects of Indian Knowledge such as: 
+                            {!! Helpers::getcontent("section_3_26") !!}
                         </div>
                     </div>
                 </div>
@@ -144,27 +144,27 @@
                 <div class="row mt-40">
                     <div class="col-md-4 wow fadeInDown mb-xs-20" data-wow-delay="0.3s" data-wow-duration="1s">
                         <div class="course-iks">
-                            <div class="mb-1 color-orange uppercase fs-15 fw-700">Parampara</div>
+                            <div class="mb-1 color-orange uppercase fs-15 fw-700">{!! Helpers::getcontent("section_3_27") !!}</div>
                             <div class="section-text color-grey">
-                                The systems and traditions that have kept Indian Knowledge and Civilization alive 
+                                {!! Helpers::getcontent("section_3_28") !!}
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-4 wow fadeInDown mb-xs-20" data-wow-delay="0.3s" data-wow-duration="2s">
                         <div class="course-iks">
-                            <div class="mb-1 color-orange uppercase fs-15 fw-700">Drishti</div>
+                            <div class="mb-1 color-orange uppercase fs-15 fw-700">{!! Helpers::getcontent("section_3_29") !!}</div>
                             <div class="section-text color-grey">
-                                The Indian perspective of integration and twinning Science with Spirituality. 
+                                {!! Helpers::getcontent("section_3_30") !!}
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-4 wow fadeInDown mb-xs-20" data-wow-delay="0.3s" data-wow-duration="3s">
                         <div class="course-iks">
-                            <div class="mb-1 color-orange uppercase fs-15 fw-700">Laukika Prayojana</div>
+                            <div class="mb-1 color-orange uppercase fs-15 fw-700">{!! Helpers::getcontent("section_3_31") !!}</div>
                             <div class="section-text color-grey">
-                                The proven wisdom in Indian Knowledge to generate and sustain prosperity and resolve problems through a balance. 
+                                {!! Helpers::getcontent("section_3_32") !!}
                             </div>
                         </div>
                     </div>

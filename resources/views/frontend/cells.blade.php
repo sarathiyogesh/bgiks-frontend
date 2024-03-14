@@ -7,11 +7,11 @@
             <div class="container relative">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-title mb-30">IKS Cell Powered By Bharath Gyan</h1>
+                        <h1 class="page-title mb-30">{!! Helpers::getcontent("section_1_35") !!}</h1>
 
                         <div class="box-one mb-40">
                             <div class="section-text white">
-                                This is an offering to enable and support colleges wanting to setup IKS Cells to create a focused group for IKS related activities in their Institutions. IKS Cells powered by Bharath Gyan will receive support from Bharath Gyan IKS.
+                                {!! Helpers::getcontent("section_1_36") !!}
                             </div>
                         </div>
 
@@ -26,14 +26,14 @@
                 <div class="row d-flex align-items-center">
                     <div class="col-md-6">
                         <div class="img-rounded">
-                            <img src="/frontend/images/iks-cell.jpg">
+                            <img src="{!! Helpers::getsingleimage('section_2_38') !!}">
                         </div>
                     </div>
                     <div class="col-md-6 mt-xs-20">
                         <div class="inner-pad-01">
-                            <div class="page-title color-blue mb-20 wow fadeInDown" data-wow-delay="0.3s" data-wow-duration="1s">Bharath Gyan IKS Cell</div>
+                            <div class="page-title color-blue mb-20 wow fadeInDown" data-wow-delay="0.3s" data-wow-duration="1s">{!! Helpers::getcontent("section_1_37") !!}</div>
                             <div class="section-text black">
-                                Bharath Gyan is accelerating forward by opening special Bharath Gyan IKS Cell, first of its kind in India.
+                                {!! Helpers::getcontent("section_2_39") !!}
                             </div>
                             <div class="d-flex align-items-center mt-20">
                                 <div class="me-3"><img src="/frontend/images/icons/SDNB_Vaishnav_College-Logo.png"></div>

@@ -56,7 +56,7 @@
                 <div class="full-wrapper relative clearfix">
                     <!-- Logo ( * your text or image into link tag *) -->
                     <div class="nav-logo-wrap local-scroll">
-                        <a href="index" class="logo">
+                        <a href="/" class="logo">
                             <img src="/frontend/images/logo.png" alt="Bharath Gyan" />
                         </a>
                     </div>
@@ -68,7 +68,7 @@
                     <!-- Main Menu -->
                     <div class="inner-nav desktop-nav">
                         <ul class="clearlist">
-                            <li><a href="index" class="active">Home</a></li>
+                            <li><a href="/" class="active">Home</a></li>
                             <li><a href="courses">Courses</a></li>
                             <li><a href="cells">Cells</a></li>
                             <li><a href="content">Content</a></li>
@@ -94,7 +94,7 @@
 
                         <div class="footer-menu mb-30">
                             <ul>
-                                <li><a href="index">Home</a></li>
+                                <li><a href="/">Home</a></li>
                                 <li><a href="courses">Courses</a></li>
                                 <li><a href="cells">Cells</a></li>
                                 <li><a href="content">Content</a></li>

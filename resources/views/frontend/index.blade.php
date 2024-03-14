@@ -12,7 +12,7 @@
                                 <div class="col-md-5">
                                     <div class="home-inner-content mt-xs-20">
                                         <h1 class="hs-line-1 mb-20">
-                                            Pioneers in Indian Civilization Knowledge Studies, <span class="color-orange">now offering attractively designed, ethos rich, interesting IKS courses</span> here to meet your IKS curriculum needs.
+                                            {!! Helpers::getcontent("section_1_1") !!}
                                         </h1>
                                     </div>
                                 </div>
@@ -21,32 +21,32 @@
                                     <div class="row mt-30 mt-xs-0">
                                         <div class="col-6 col-md-6">
                                             <div class="card-box-one mb-40 mb-xs-20">
-                                                <div class="mb-10"><img src="/frontend/images/icons/courses.png"></div>
-                                                <div class="title">COURSES</div>
+                                                <div class="mb-10"><img src="{!! Helpers::getsingleimage('section_1_3') !!}"></div>
+                                                <div class="title">{!! Helpers::getcontent("section_1_2") !!}</div>
                                                 <div class="read-more"><a href="courses">read more</a></div>
                                             </div>
                                         </div>
 
                                         <div class="col-6 col-md-6">
                                             <div class="card-box-one mb-40 mb-xs-20">
-                                                <div class="mb-10"><img src="/frontend/images/icons/cells.png"></div>
-                                                <div class="title">Cells</div>
+                                                <div class="mb-10"><img src="{!! Helpers::getsingleimage('section_1_5') !!}"></div>
+                                                <div class="title">{!! Helpers::getcontent("section_1_4") !!}</div>
                                                 <div class="read-more"><a href="cells">read more</a></div>
                                             </div>
                                         </div>
 
                                         <div class="col-6 col-md-6">
                                             <div class="card-box-one">
-                                                <div class="mb-10"><img src="/frontend/images/icons/content.png"></div>
-                                                <div class="title">Content</div>
+                                                <div class="mb-10"><img src="{!! Helpers::getsingleimage('section_1_7') !!}"></div>
+                                                <div class="title">{!! Helpers::getcontent("section_1_6") !!}</div>
                                                 <div class="read-more"><a href="content">read more</a></div>
                                             </div>
                                         </div>
 
                                         <div class="col-6 col-md-6">
                                             <div class="card-box-one">
-                                                <div class="mb-10"><img src="/frontend/images/icons/credentials.png"></div>
-                                                <div class="title">Credentials</div>
+                                                <div class="mb-10"><img src="{!! Helpers::getsingleimage('section_1_9') !!}"></div>
+                                                <div class="title">{!! Helpers::getcontent("section_1_8") !!}</div>
                                                 <div class="read-more"><a href="credentials">read more</a></div>
                                             </div>
                                         </div>
