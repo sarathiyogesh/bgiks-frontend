@@ -84,7 +84,7 @@
 
                     <div class="col-md-6 mt-xs-20">
                         <div class="img-rounded">
-                            <img src="{!! Helpers::getcontent('section_3_83') !!}">
+                            <img src="{!! Helpers::getsingleimage('section_3_84') !!}">
                         </div>
                     </div>
                 </div>
