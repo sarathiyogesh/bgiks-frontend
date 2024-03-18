@@ -19,40 +19,50 @@
 
                         <h3 class="hs-line-3 mb-10">{!! Helpers::getcontent("section_2_72") !!}</h3>
 
-                        <div class="row mt-20">
+                        <div class="row mt-20 local-scroll">
                             <div class="col-md-4 wow fadeInDown" data-wow-delay="0.3s" data-wow-duration="1s">
-                                <div class="box-two d-flex align-items-center mb-20">
-                                    <div class="me-3"><img src="{!! Helpers::getsingleimage('section_2_74') !!}"></div>
-                                    <div class="text-center section-text">{!! Helpers::getcontent("section_2_73") !!}</div>
-                                </div>
+                                <a href="#mouwithiksdivision">
+                                    <div class="box-two d-flex align-items-center mb-20">
+                                        <div class="me-3"><img src="{!! Helpers::getsingleimage('section_2_74') !!}"></div>
+                                        <div class="text-center section-text">{!! Helpers::getcontent("section_2_73") !!}</div>
+                                    </div>
+                                </a>
                             </div>
 
                             <div class="col-md-4 wow fadeInDown" data-wow-delay="0.3s" data-wow-duration="2s">
-                                <div class="box-two d-flex align-items-center mb-20">
-                                    <div class="me-3"><img src="{!! Helpers::getsingleimage('section_2_76') !!}"></div>
-                                    <div class="text-center section-text">{!! Helpers::getcontent("section_2_75") !!}</div>
-                                </div>
+                                <a href="#mentorswithiks">
+                                    <div class="box-two d-flex align-items-center mb-20">
+                                        <div class="me-3"><img src="{!! Helpers::getsingleimage('section_2_76') !!}"></div>
+                                        <div class="text-center section-text">{!! Helpers::getcontent("section_2_75") !!}</div>
+                                    </div>
+                                </a>
                             </div>
 
                             <div class="col-md-4 wow fadeInDown" data-wow-delay="0.3s" data-wow-duration="3s">
-                                <div class="box-two d-flex align-items-center mb-20">
-                                    <div class="me-3"><img src="{!! Helpers::getsingleimage('section_2_78') !!}"></div>
-                                    <div class="text-center section-text">{!! Helpers::getcontent("section_2_77") !!}</div>
-                                </div>
+                                <a href="#expertsiniks">
+                                    <div class="box-two d-flex align-items-center mb-20">
+                                        <div class="me-3"><img src="{!! Helpers::getsingleimage('section_2_78') !!}"></div>
+                                        <div class="text-center section-text">{!! Helpers::getcontent("section_2_77") !!}</div>
+                                    </div>
+                                </a>
                             </div>
 
                             <div class="col-md-4 wow fadeInDown" data-wow-delay="0.3s" data-wow-duration="3s">
-                                <div class="box-two d-flex align-items-center mb-20">
-                                    <div class="me-3"><img src="{!! Helpers::getsingleimage('section_2_80') !!}"></div>
-                                    <div class="text-center section-text">{!! Helpers::getcontent("section_2_79") !!}</div>
-                                </div>
+                                <a href="#authorsofbooks">
+                                    <div class="box-two d-flex align-items-center mb-20">
+                                        <div class="me-3"><img src="{!! Helpers::getsingleimage('section_2_80') !!}"></div>
+                                        <div class="text-center section-text">{!! Helpers::getcontent("section_2_79") !!}</div>
+                                    </div>
+                                </a>
                             </div>
 
                             <div class="col-md-4 wow fadeInDown" data-wow-delay="0.3s" data-wow-duration="3s">
-                                <div class="box-two d-flex align-items-center mb-20">
-                                    <div class="me-3"><img src="{!! Helpers::getsingleimage('section_2_82') !!}"></div>
-                                    <div class="text-center section-text">{!! Helpers::getcontent("section_2_81") !!}</div>
-                                </div>
+                                <a href="#facultyforfdp">
+                                    <div class="box-two d-flex align-items-center mb-20">
+                                        <div class="me-3"><img src="{!! Helpers::getsingleimage('section_2_82') !!}"></div>
+                                        <div class="text-center section-text">{!! Helpers::getcontent("section_2_81") !!}</div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -60,7 +70,7 @@
             </div>
         </section>
 
-        <section class="small-section bg-gray-lighter">
+        <section class="small-section bg-gray-lighter" id="mouwithiksdivision">
             <div class="container relative">
                 <div class="row">
                     <div class="col-md-6">
@@ -81,7 +91,7 @@
             </div>
         </section>
 
-        <section class="small-section">
+        <section class="small-section" id="mentorswithiks">
             <div class="container relative">
                 <div class="row mb-30 d-flex align-items-center">
                     <div class="col-md-12">
@@ -112,7 +122,7 @@
             </div>
         </section>
 
-        <section class="small-section bg-gray-lighter">
+        <section class="small-section bg-gray-lighter" id="expertsiniks">
             <div class="container relative">
                 <div class="row d-flex align-items-center">
                     <div class="col-md-6">
@@ -132,7 +142,7 @@
             </div>
         </section>
 
-        <section class="small-section">
+        <section class="small-section" id="authorsofbooks">
             <div class="container relative">
                 <div class="row d-flex align-items-center">
                     <div class="col-md-6 xs-order-2 mt-xs-20">
@@ -152,7 +162,7 @@
             </div>
         </section>
 
-        <section class="small-section bg-gray-lighter">
+        <section class="small-section bg-gray-lighter" id="facultyforfdp">
             <div class="container relative">
                 <div class="row mb-30">
                     <div class="col-md-12">
@@ -222,6 +232,18 @@
                     <div class="col-6 col-md-3">
                         <div class="post-prev-img mb-30">
                             <a href="/frontend/images/program-10.jpg" class="lightbox-gallery-2 mfp-image"><img src="/frontend/images/program-10-thumb.jpg" alt="" /></a>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="post-prev-img mb-30">
+                            <a href="/frontend/images/program-11.jpg" class="lightbox-gallery-2 mfp-image"><img src="/frontend/images/program-11-thumb.jpg" alt="" /></a>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="post-prev-img mb-30">
+                            <a href="/frontend/images/program-12.jpg" class="lightbox-gallery-2 mfp-image"><img src="/frontend/images/program-12-thumb.jpg" alt="" /></a>
                         </div>
                     </div>
                 </div>

@@ -78,7 +78,7 @@
                     <div class="col-md-12">
                         <div class="buy-course">
                             <div class="box-three">
-                                <h3 class="hs-line-6 mb-0 color-orange">Buy this Course</h3>
+                                <h3 class="hs-line-6 mb-0 color-orange">Register for this Course</h3>
                                 <div class="hs-line-3 white">Choose a relevant course type.</div>
                             </div>
 
@@ -90,7 +90,7 @@
                                     </div>
                                     <div class="col-md-5">
                                         <div class="d-flex justify-content-end">
-                                            <a href="javascript:;" class="btn btn-mod btn-blue btn-round btn-small">buy faculty assist program</a>
+                                            <a href="javascript:;" class="btn btn-mod btn-blue btn-round btn-small">Register for faculty assist program</a>
                                         </div>
                                     </div>
                                 </div>
@@ -104,7 +104,7 @@
                                     </div>
                                     <div class="col-md-5">
                                         <div class="d-flex justify-content-end">
-                                            <a href="javascript:;" class="btn btn-mod btn-blue btn-round btn-small">buy student assist program</a>
+                                            <a href="javascript:;" class="btn btn-mod btn-blue btn-round btn-small">Register for student assist program</a>
                                         </div>
                                     </div>
                                 </div>
