@@ -68,14 +68,14 @@
                     <!-- Main Menu -->
                     <div class="inner-nav desktop-nav">
                         <ul class="clearlist">
-                            <li><a href="/" class="active">Home</a></li>
-                            <li><a href="courses">Courses</a></li>
-                            <li><a href="cells">Cells</a></li>
-                            <li><a href="content">Content</a></li>
-                            <li><a href="credentials">Credentials</a></li>
-                            <li><a href="collaborations">Collaborations</a></li>
-                            <li><a href="community">Community</a></li>
-                            <li><a href="contact">Contact</a></li>
+                            <li><a href="/" class="{!! Request::routeIs('home') ? 'active' : '' !!}">Home</a></li>
+                            <li><a href="/courses" class="{!! Request::routeIs('courses') ? 'active' : '' !!}">Courses</a></li>
+                            <li><a href="/cells" class="{!! Request::routeIs('cells') ? 'active' : '' !!}">Cells</a></li>
+                            <li><a href="/content" class="{!! Request::routeIs('content') ? 'active' : '' !!}">Content</a></li>
+                            <li><a href="/credentials" class="{!! Request::routeIs('credentials') ? 'active' : '' !!}">Credentials</a></li>
+                            <li><a href="/collaborations" class="{!! Request::routeIs('collaborations') ? 'active' : '' !!}">Collaborations</a></li>
+                            <li><a href="/community" class="{!! Request::routeIs('community') ? 'active' : '' !!}">Community</a></li>
+                            <li><a href="/contact" class="{!! Request::routeIs('contact') ? 'active' : '' !!}">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -95,16 +95,16 @@
                         <div class="footer-menu mb-30">
                             <ul>
                                 <li><a href="/">Home</a></li>
-                                <li><a href="courses">Courses</a></li>
-                                <li><a href="cells">Cells</a></li>
-                                <li><a href="content">Content</a></li>
-                                <li><a href="credentials">Credentials</a></li>
-                                <li><a href="collaborations">Collaborations</a></li>
-                                <li><a href="javascript:;">Community</a></li>
-                                <li><a href="contact">Contact</a></li>
-                                <li><a href="why-iks">Why IKS?</a></li>
-                                <li><a href="what-is-iks">What is IKS?</a></li>
-                                <li><a href="privacy-policy">Privacy</a></li>
+                                <li><a href="/courses">Courses</a></li>
+                                <li><a href="/cells">Cells</a></li>
+                                <li><a href="/content">Content</a></li>
+                                <li><a href="/credentials">Credentials</a></li>
+                                <li><a href="/collaborations">Collaborations</a></li>
+                                <li><a href="/javascript:;">Community</a></li>
+                                <li><a href="/contact">Contact</a></li>
+                                <li><a href="/why-iks">Why IKS?</a></li>
+                                <li><a href="/what-is-iks">What is IKS?</a></li>
+                                <li><a href="/privacy-policy">Privacy</a></li>
                             </ul>
                         </div>
                         <div class="footer-copy text-center">
