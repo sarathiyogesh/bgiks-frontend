@@ -25,7 +25,8 @@ class Helpers {
         if($info && $info->field_value){
             $image = Media::find($info->field_value);
             if($image){
-                return 'http://bgiks.test/'.$image->image_link;
+                $admin_url = env('BGIKS_ADMIN_URL');
+                return $admin_url.$image->image_link;
             }
         }
         return '';
