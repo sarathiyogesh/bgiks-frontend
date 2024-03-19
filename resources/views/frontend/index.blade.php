@@ -59,14 +59,14 @@
                                     <div class="hs-line-3 mb-20 m-center mb-xs-10">Frequently asked questions</div>
                                     <div class="faq-cta-container">
                                         <div class="faq-one me-5">
-                                            <a href="what-is-iks">
+                                            <a href="{!! URL::to('frontend/images/WhatIsIKS.pdf') !!}" target="_blank">
                                                 <div class="icon"><img src="/frontend/images/icons/question.png"></div>
                                                 What is IKS?
                                             </a>
                                         </div>
 
                                         <div class="faq-one">
-                                            <a href="why-iks">
+                                            <a href="{!! URL::to('frontend/images/WhyIKS.pdf') !!}" target="_blank">
                                                 <div class="icon"><img src="/frontend/images/icons/question.png"></div>
                                                 Why IKS?
                                             </a>

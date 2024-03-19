@@ -2901,6 +2901,15 @@ a.logo:hover{
 .section-text p:last-child {
     margin-bottom: 0;
 }
+.section-text-alt {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.7;
+}
+.section-text-alt p {
+    margin-bottom: 10px;
+}
 .section-bot-image{
     margin: 140px 0 -140px;
     text-align: center;
