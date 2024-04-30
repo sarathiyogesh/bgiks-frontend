@@ -45,33 +45,41 @@
                             {!! Helpers::getcontent("section_2_16") !!}
                         </div>
 
-                        <div class="row mt-20">
+                        <div class="row mt-20 local-scroll">
                             <div class="col-md-3 wow fadeInDown mb-xs-20" data-wow-delay="0.3s" data-wow-duration="1s">
-                                <div class="box-two d-flex align-items-center justify-content-center m-flex-start">
-                                    <div class="me-3"><img src="{!! Helpers::getsingleimage('section_2_18') !!}"></div>
-                                    <div class="text-center section-text">{!! Helpers::getcontent("section_2_17") !!}</div>
-                                </div>
+                                <a href="#faculty-assist-programs">
+                                    <div class="box-two d-flex align-items-center justify-content-center m-flex-start">
+                                        <div class="me-3"><img src="{!! Helpers::getsingleimage('section_2_18') !!}"></div>
+                                        <div class="text-center section-text">{!! Helpers::getcontent("section_2_17") !!}</div>
+                                    </div>
+                                </a>
                             </div>
 
                             <div class="col-md-3 wow fadeInDown mb-xs-20" data-wow-delay="0.3s" data-wow-duration="2s">
-                                <div class="box-two d-flex align-items-center justify-content-center m-flex-start">
-                                    <div class="me-3"><img src="{!! Helpers::getsingleimage('section_2_20') !!}"></div>
-                                    <div class="text-center section-text">{!! Helpers::getcontent("section_2_19") !!}</div>
-                                </div>
+                                <a href="#student-assist-programs">
+                                    <div class="box-two d-flex align-items-center justify-content-center m-flex-start">
+                                        <div class="me-3"><img src="{!! Helpers::getsingleimage('section_2_20') !!}"></div>
+                                        <div class="text-center section-text">{!! Helpers::getcontent("section_2_19") !!}</div>
+                                    </div>
+                                </a>
                             </div>
 
                             <div class="col-md-3 wow fadeInDown mb-xs-20" data-wow-delay="0.3s" data-wow-duration="3s">
-                                <div class="box-two d-flex align-items-center justify-content-center m-flex-start">
-                                    <div class="me-3"><img src="{!! Helpers::getsingleimage('section_2_22') !!}"></div>
-                                    <div class="text-center section-text">{!! Helpers::getcontent("section_2_21") !!}</div>
-                                </div>
+                                <a href="#elearning-courses">
+                                    <div class="box-two d-flex align-items-center justify-content-center m-flex-start">
+                                        <div class="me-3"><img src="{!! Helpers::getsingleimage('section_2_22') !!}"></div>
+                                        <div class="text-center section-text">{!! Helpers::getcontent("section_2_21") !!}</div>
+                                    </div>
+                                </a>
                             </div>
 
                             <div class="col-md-3 wow fadeInDown mb-xs-20" data-wow-delay="0.3s" data-wow-duration="3s">
-                                <div class="box-two d-flex align-items-center justify-content-center m-flex-start">
-                                    <div class="me-3"><img src="{!! Helpers::getsingleimage('section_2_24') !!}"></div>
-                                    <div class="text-center section-text">{!! Helpers::getcontent("section_2_23") !!}</div>
-                                </div>
+                                <a href="#library">
+                                    <div class="box-two d-flex align-items-center justify-content-center m-flex-start">
+                                        <div class="me-3"><img src="{!! Helpers::getsingleimage('section_2_24') !!}"></div>
+                                        <div class="text-center section-text">{!! Helpers::getcontent("section_2_23") !!}</div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -127,7 +135,6 @@
             </div>
         </section>
 
-
         <section class="small-section">
             <div class="container relative">
                 <div class="row">
@@ -166,6 +173,85 @@
                             <div class="section-text color-grey">
                                 {!! Helpers::getcontent("section_3_32") !!}
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="small-section pt-0">
+            <div class="container relative">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="page-title color-blue mb-10">
+                            IKS Assist Programs
+                        </div>
+                        <div class="section-text-alt black">
+                            <p>These are courses which are curated, designed and facilitated online by Bharath Gyan IKS, for in class delivery by the existing faculty of the respective colleges.</p>
+                            <p>These courses are designed to help colleges meet their IKS Credit requirements by offering credit courses that fall under the IKS discipline.</p>
+                            <p>These programs from Bharath Gyan IKS, take the load off the college in designing IKS courses and preparing course content for consumption by both Faculty and Students.</p>
+                            <p>Colleges can subscribe to these IKS Assist Programs once they have these courses passed in their Academic Council / Board of Studies as applicable.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="small-section bg-gray-lighter" id="faculty-assist-programs">
+            <div class="container relative">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="page-title color-blue mb-10">
+                            Faculty Assist Programs
+                        </div>
+                        <div class="section-text-alt black">
+                            <p>On the college subscribing to these IKS Assist Programs, the nominated faculty from these colleges will gain access to an online library of course support materials in Audio Visual format, ebook format and article format, as well as to a Quiz Databank.</p>
+                            <p>Faculty of the college will also gain access to Video lectures from Bharath Gyan. These video lectures will be aligned with the design of the course, to equip the faculty on the content they should deliver as part of this course in each class / lecture. This will help the faculty refresh themselves prior to every lecture of the course.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="small-section" id="student-assist-programs">
+            <div class="container relative">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="page-title color-blue mb-10">
+                            Student Assist Programs
+                        </div>
+                        <div class="section-text-alt black">
+                            <p>Students desirous of gaining online access to the course material may subscribe to the Student Assist Program, which will give them access, beyond the classroom, to an online library of course support materials in Audio Visual format, ebook format and article format, as well as to online Quizzes. This is open to students registered for the IKS courses for which their institutions have registered with Bharath Gyan IKS for Faculty Assist programs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="small-section bg-gray-lighter" id="elearning-courses">
+            <div class="container relative">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="page-title color-blue mb-10">
+                            eLearning Courses
+                        </div>
+                        <div class="section-text-alt black">
+                            <p>In addition, Bharath Gyan IKS also has eLearning courses to offer educational institutions, to supplement their inhouse IKS course delivery needs. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="small-section" id="library">
+            <div class="container relative">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="page-title color-blue mb-10">
+                            Library
+                        </div>
+                        <div class="section-text-alt black">
+                            <p>Students desirous of availing access to the content of their courses beyond the respective course semester, can opt for subscription to the Library Membership. Resources in the Library will be organized as per the course structure to ensure that the students can relate them to their courses completed.</p>
                         </div>
                     </div>
                 </div>
