@@ -6,7 +6,9 @@ use Illuminate\Http\Request;
 use Maatwebsite\Excel\Facades\Excel;
 use Spatie\Permission\Models\Role;
 use App\Models\State;
+use App\Models\Course;
 use App\Models\User;
+use App\Models\Coursetopic;
 use Validator;
 use Hash;
 use DB;
@@ -37,7 +39,8 @@ class FrontendController extends Controller
     }
 
     public function courses(){
-        return view('frontend.courses');
+        $courses = $records = Course::orderBy('id', 'ASC')->where('status', 'active')->latest()->get();
+        return view('frontend.courses', compact('courses'));
     }
 
     public function content(){
@@ -69,8 +72,13 @@ class FrontendController extends Controller
         return view('frontend.why-iks');
     }
 
-    public function tamilariviyal(){
-        return view('frontend.tamil-ariviyal');
+    public function courseoverview($slug){
+        $course = Course::where('slug', $slug)->where('status', 'active')->first();
+        if(!$course){
+            return back();
+        }
+        $parent_topic = Coursetopic::where('parent_id',0)->where('status','active')->where('course_id',$course->id)->get();
+        return view('frontend.course-overview',compact('course','parent_topic'));
     }
 
     public function institutionregistrationpost(Request $req){

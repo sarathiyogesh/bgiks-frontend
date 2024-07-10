@@ -96,28 +96,56 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="row mt-60 d-flex align-items-center mt-xs-30 mb-xs-30">
-                    <div class="col-md-6">
-                        <div class="inner-pad-02">
-                            <div class="page-title white mb-20 wow fadeInDown" data-wow-delay="0.3s" data-wow-duration="1s">Tamil Ariviyal</div>
-                            <div class="section-text">
-                                This course showcases the sciences in Tamil as a language, a land, a people, a culture and a knowledgebase. This course is expected to inculcate an urge to learn more about Tamil and from its knowledgebase to see what had made the Tamil region and its people properouos for millennia, so that, the same can be applied relevantly today
+                <?php $i = 0; ?>
+                @foreach($courses as $course)
+                    <?php 
+                        $remaining = $i%2;
+                        $desc = $clear = trim(preg_replace('/ +/', ' ', preg_replace('/[^A-Za-z0-9 ]/', ' ', urldecode(html_entity_decode(strip_tags($course->description))))));
+                    ?>
+                    @if($remaining == 0)
+                        <div class="row mt-60 d-flex align-items-center mt-xs-30 mb-xs-30">
+                            <div class="col-md-6">
+                                <div class="inner-pad-02">
+                                    <div class="page-title white mb-20 wow fadeInDown" data-wow-delay="0.3s" data-wow-duration="1s">{!! $course->course_name !!}</div>
+                                    <div class="section-text">
+                                        {!! substr($desc, 0, 650) !!}...
+                                    </div>
+                                    <div class="mt-30">
+                                        <a href="{{ url('course/'.$course->slug) }}" class="btn btn-mod btn-color btn-round btn-small">Read more</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="mt-30">
-                                <a href="tamil-ariviyal" class="btn btn-mod btn-color btn-round btn-small">Read more</a>
+
+                            <div class="col-md-6 mt-xs-20">
+                                <div class="img-rounded">
+                                    <img src="{{ env('BGIKS_ADMIN_URL').$course->image }}">
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col-md-6 mt-xs-20">
-                        <div class="img-rounded">
-                            <img src="/frontend/images/tamil-ariviyal.jpg">
+                    @else
+                        <div class="row mt-60 d-flex align-items-center mt-xs-30">
+                            <div class="col-md-6 xs-order-2 mt-xs-20">
+                                <div class="img-rounded">
+                                    <img src="{{ env('BGIKS_ADMIN_URL').$course->image }}">
+                                </div>
+                            </div>
+                            <div class="col-md-6 xs-order-1">
+                                <div class="inner-pad-01">
+                                    <div class="page-title white mb-20 wow fadeInDown" data-wow-delay="0.3s" data-wow-duration="1s">{!! $course->course_name !!}</div>
+                                    <div class="section-text">
+                                        {!! substr($desc, 0, 650) !!}....
+                                    </div>
+                                    <div class="mt-30">
+                                        <a href="{{ url('course/'.$course->slug) }}" class="btn btn-mod btn-color btn-round btn-small">Read more</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    @endif
+                    <?php $i++; ?>
+                @endforeach
 
-                <div class="row mt-60 d-flex align-items-center mt-xs-30">
+                <!-- <div class="row mt-60 d-flex align-items-center mt-xs-30">
                     <div class="col-md-6 xs-order-2 mt-xs-20">
                         <div class="img-rounded">
                             <img src="/frontend/images/water-harnessing.jpg">
@@ -131,7 +159,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
+
+                
             </div>
         </section>
 

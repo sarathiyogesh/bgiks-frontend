@@ -35,4 +35,4 @@ Route::get('/institution-registration', 'FrontendController@institutionregistrat
 Route::post('/institution-registration/post', 'FrontendController@institutionregistrationpost');
 Route::get('/what-is-iks', 'FrontendController@whatisiks')->name('whatisiks');
 Route::get('/why-iks', 'FrontendController@whyiks')->name('whyiks');
-Route::get('/tamil-ariviyal', 'FrontendController@tamilariviyal');
+Route::get('/course/{slug}', 'FrontendController@courseoverview');

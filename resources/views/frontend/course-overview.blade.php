@@ -1,3 +1,6 @@
+<?php
+    use App\Models\Coursetopic;
+?>
 @extends('frontend.master')
 @section('maincontent')
 	<main id="main">
@@ -24,7 +27,7 @@
             </div>
         </section>
 
-        <section class="small-section pt-0 pb-30">
+        <!-- <section class="small-section pt-0 pb-30">
             <div class="container">
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-5">
@@ -34,9 +37,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <section class="small-section bg-gray-lighter">
+        <!-- <section class="small-section bg-gray-lighter">
             <div class="container relative">
                 <div class="row d-flex align-items-center">
                     <div class="col-md-12">
@@ -70,9 +73,42 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <section class="small-section pt-0">
+        <div class="col-md-12">
+            <div class="card card-flush">
+                <div class="card-body">
+                    <h3 class="text-dark">{{$course->course_name}}</h3>
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="section-text" style="color: #000;">
+                                {!! $course->description !!}
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <p><b>Topics inside {{$course->course_name}}</b></p>
+                            <div class="mycourse-topics">
+                                <ul>
+                                    @foreach($parent_topic as $parent)
+                                    <li><a href="javascript:;" class="active"><i class="las la-folder"></i> {{$parent->topic_name}}</a></li>
+                                        <?php
+                                            $sub_topics = Coursetopic::where('status','active')->where('parent_id',$parent->id)->get();
+                                        ?>
+                                        @foreach($sub_topics as $sub)
+                                            <li><a href="javascript:;"><i class="las la-folder"></i>{{$sub->topic_name}}</a></li>
+                                        @endforeach
+                                    @endforeach
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- <section class="small-section pt-0">
             <div class="container relative">
                 <div class="row">
                     <div class="col-md-12">
@@ -113,6 +149,6 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 @endsection
