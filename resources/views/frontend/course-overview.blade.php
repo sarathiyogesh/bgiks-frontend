@@ -9,17 +9,8 @@
         <section class="page-section bg-white pb-10">
             <div class="container relative">
                 <div class="row d-flex align-items-center justify-content-between course-avail">
-                    <div class="col-md-5">
-                        <div class="page-title color-blue">Tamil Ariviyal</div>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="d-flex justify-content-end color-grey fs-12 uppercase fw-600 mb-10">Available As</div>
-                        <ul>
-                            <li>FACULTY assist program</li>
-                            <li>STUDENT assist program</li>
-                            <li>private e-learnng</li>
-                            <li>library</li>
-                        </ul>
+                    <div class="col-md-12">
+                        <div class="page-title color-blue">{{$course->course_name}}</div>
                     </div>
                 </div>
 
@@ -75,38 +66,33 @@
             </div>
         </section> -->
 
-        <div class="col-md-12">
-            <div class="card card-flush">
-                <div class="card-body">
-                    <h3 class="text-dark">{{$course->course_name}}</h3>
-
-                    <div class="row">
-                        <div class="col-md-8">
-                            <div class="section-text" style="color: #000;">
-                                {!! $course->description !!}
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <p><b>Topics inside {{$course->course_name}}</b></p>
-                            <div class="mycourse-topics">
-                                <ul>
-                                    @foreach($parent_topic as $parent)
-                                    <li><a href="javascript:;" class="active"><i class="las la-folder"></i> {{$parent->topic_name}}</a></li>
-                                        <?php
-                                            $sub_topics = Coursetopic::where('status','active')->where('parent_id',$parent->id)->get();
-                                        ?>
-                                        @foreach($sub_topics as $sub)
-                                            <li><a href="javascript:;"><i class="las la-folder"></i>{{$sub->topic_name}}</a></li>
-                                        @endforeach
-                                    @endforeach
-                                </ul>
-                            </div>
+        <section class="small-section pt-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="section-text" style="color: #000;">
+                            {!! $course->description !!}
                         </div>
                     </div>
-                    
+                    <div class="col-md-4">
+                        <p><b>Topics inside {{$course->course_name}}</b></p>
+                        <div class="mycourse-topics">
+                            <ul>
+                                @foreach($parent_topic as $parent)
+                                <li><a href="javascript:;" class="active"><i class="las la-folder"></i> {{$parent->topic_name}}</a></li>
+                                    <?php
+                                        $sub_topics = Coursetopic::where('status','active')->where('parent_id',$parent->id)->get();
+                                    ?>
+                                    @foreach($sub_topics as $sub)
+                                        <li><a href="javascript:;"><i class="las la-folder"></i>{{$sub->topic_name}}</a></li>
+                                    @endforeach
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- <section class="small-section pt-0">
             <div class="container relative">

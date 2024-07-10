@@ -6257,3 +6257,26 @@ a.blog-item-more:hover{
 .terms-content p {
     margin-bottom: 15px;
 }
+.mycourse-topics ul {
+  margin: 0;
+  padding: 0;
+}
+.mycourse-topics ul li {
+  list-style: none;
+}
+.mycourse-topics ul li a {
+  background-color: #fbfbfb;
+  padding: 8px 10px;
+  color: #232323;
+  border: 1px solid #ededed;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.mycourse-topics ul li a i {
+  color: #232323;
+}
+.mycourse-topics ul li a.active {
+  background-color: #ddd;
+}

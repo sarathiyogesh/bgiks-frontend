@@ -64,6 +64,10 @@ class FrontendController extends Controller
         return view('frontend.institution-registration', compact('states'));
     }
 
+    public function iksolympiad(){
+        return view('frontend.iks-olympiad');
+    }
+
     public function whatisiks(){
         return view('frontend.what-is-iks');
     }
