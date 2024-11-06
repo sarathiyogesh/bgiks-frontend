@@ -40,6 +40,7 @@ class FrontendController extends Controller
 
     public function courses(){
         $courses = $records = Course::orderBy('id', 'ASC')->where('status', 'active')->latest()->get();
+        //return $courses;
         return view('frontend.courses', compact('courses'));
     }
 

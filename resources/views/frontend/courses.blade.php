@@ -100,7 +100,8 @@
                 @foreach($courses as $course)
                     <?php 
                         $remaining = $i%2;
-                        $desc = $clear = trim(preg_replace('/ +/', ' ', preg_replace('/[^A-Za-z0-9 ]/', ' ', urldecode(html_entity_decode(strip_tags($course->description))))));
+                        $desc = $clear = trim($course->description);
+                        // $desc = $clear = trim(preg_replace('/ +/', ' ', preg_replace('/[^A-Za-z0-9 ]/', ' ', urldecode(html_entity_decode(strip_tags($course->description))))));
                     ?>
                     @if($remaining == 0)
                         <div class="row mt-60 d-flex align-items-center mt-xs-30 mb-xs-30">
